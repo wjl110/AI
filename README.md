@@ -37,3 +37,56 @@
 - 主题系统：支持亮色/暗色模式
 
 ## 📦 项目结构 
+
+AI-Game-Assistant/
+├── index.html # 首页
+├── more.html # 功能介绍
+├── download.html # 下载页面
+├── docs.html # 文档页面
+├── contact.html # 联系页面
+├── login.html # 登录页面
+├── styles.css # 样式文件
+└── script.js # 交互脚本
+
+
+## 🔨 开发
+
+```bash
+# 克隆项目
+git clone https://github.com/wjl110/AI-Game-Assistant.git
+
+# 进入项目目录
+cd AI-Game-Assistant
+
+# 使用VSCode打开
+code .
+```
+
+## 🤝 贡献指南
+
+1. Fork 本仓库
+2. 创建新的分支 `git checkout -b feature/your-feature`
+3. 提交更改 `git commit -m 'Add some feature'`
+4. 推送到分支 `git push origin feature/your-feature`
+5. 提交 Pull Request
+
+## 📝 开源协议
+
+本项目采用 MIT 协议开源，详见 [LICENSE](LICENSE) 文件。
+
+## 👨‍💻 开发者
+
+**主要开发者：** [wjl110](https://github.com/wjl110)
+
+## 📞 联系方式
+
+- 邮箱：support@aigameassistant.com
+- 官网：https://aigameassistant.com
+- GitHub：https://github.com/wjl110
+
+## 🙏 致谢
+
+感谢所有为这个项目做出贡献的开发者！
+
+---
+Made with ❤️ by [wjl110](https://github.com/wjl110)
