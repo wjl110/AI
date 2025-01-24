@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 鼠标聚光灯效果 -->
+    <div class="spotlight"></div>
+    <!-- 背景渐变效果 -->
+    <div class="gradient-canvas"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar glass">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">概览</a>
+                    <a href="more.html" class="nav-link">功能</a>
+                    <a href="download.html" class="nav-link">下载</a>
+                    <a href="docs.html" class="nav-link">文档</a>
+                    <a href="contact.html" class="nav-link active">联系我们</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="login.html" class="button login-button">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contact-section">
+            <div class="contact-header">
+                <h1>联系我们</h1>
+                <p class="contact-subtitle">我们期待听到您的声音</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- 联系方式卡片 -->
+                <div class="contact-info glass">
+                    <div class="info-group">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3>地址</h3>
+                            <p>北京市海淀区中关村科技园</p>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h3>邮箱</h3>
+                            <p>support@aigameassistant.com</p>
+                        </div>
+                    </div>
+                    <div class="info-group">
+                        <div class="info-icon">📱</div>
+                        <div class="info-content">
+                            <h3>电话</h3>
+                            <p>400-888-8888</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="微信">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <!-- WeChat icon path -->
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="QQ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <!-- QQ icon path -->
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="微博">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <!-- Weibo icon path -->
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 联系表单 -->
+                <form class="contact-form glass" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">主题</label>
+                        <select id="subject" name="subject" class="form-input" required>
+                            <option value="">请选择咨询主题</option>
+                            <option value="business">商务合作</option>
+                            <option value="support">技术支持</option>
+                            <option value="feedback">产品反馈</option>
+                            <option value="other">其他问题</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">消息内容</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button primary full-width">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

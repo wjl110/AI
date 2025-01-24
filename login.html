@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 鼠标聚光灯效果 -->
+    <div class="spotlight"></div>
+    <!-- 背景渐变效果 -->
+    <div class="gradient-canvas"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar glass">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">概览</a>
+                    <a href="more.html" class="nav-link">功能</a>
+                    <a href="download.html" class="nav-link">下载</a>
+                    <a href="docs.html" class="nav-link">文档</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="login-container glass">
+            <div class="login-header">
+                <h2>登录</h2>
+                <p>欢迎回来！请登录您的账号</p>
+            </div>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="请输入您的邮箱"
+                           class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <div class="password-input">
+                        <input type="password" id="password" name="password" required 
+                               placeholder="请输入您的密码"
+                               class="form-input">
+                        <button type="button" class="toggle-password" aria-label="显示密码">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 5c-7.333 0-12 6-12 6s4.667 6 12 6 12-6 12-6-4.667-6-12-6zm0 10a4 4 0 110-8 4 4 0 010 8z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="remember">
+                        <span>记住我</span>
+                    </label>
+                    <a href="#" class="forgot-password">忘记密码？</a>
+                </div>
+                <button type="submit" class="button primary full-width">登录</button>
+                <div class="login-divider">
+                    <span>或</span>
+                </div>
+                <div class="social-login">
+                    <a href="/auth/github" class="social-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.84 9.49.5.09.68-.22.68-.485 0-.236-.008-.866-.013-1.7-2.782.603-3.37-1.34-3.37-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.07-.608.07-.608 1.003.07 1.532 1.03 1.532 1.03.892 1.53 2.34 1.088 2.91.833.09-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.09.39-1.984 1.03-2.683-.103-.253-.447-1.27.098-2.647 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.91-1.296 2.747-1.026 2.747-1.026.55 1.377.204 2.394.1 2.647.64.7 1.03 1.592 1.03 2.683 0 3.842-2.34 4.687-4.566 4.935.36.308.678.92.678 1.852 0 1.336-.01 2.415-.01 2.743 0 .267.18.578.688.48C19.138 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                        <span>使用 GitHub 登录</span>
+                    </a>
+                </div>
+                <p class="signup-hint">
+                    还没有账号？<a href="#" class="link">立即注册</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

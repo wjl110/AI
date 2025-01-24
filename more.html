@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能介绍 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 鼠标聚光灯效果 -->
+    <div class="spotlight"></div>
+    <!-- 背景渐变效果 -->
+    <div class="gradient-canvas"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar glass">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">概览</a>
+                    <a href="more.html" class="nav-link active">功能</a>
+                    <a href="download.html" class="nav-link">下载</a>
+                    <a href="docs.html" class="nav-link">文档</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="#" class="button login-button">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="features-showcase">
+            <div class="section-header">
+                <h1>产品功能</h1>
+                <p>全方位的游戏数据分析与AI辅助功能</p>
+            </div>
+
+            <div class="features-row">
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">🎯</div>
+                    <div class="feature-content">
+                        <h3>实时战斗分析</h3>
+                        <p>通过AI实时分析战斗数据，提供即时战术建议</p>
+                        <ul class="feature-list">
+                            <li>伤害输出分析</li>
+                            <li>战术路线优化</li>
+                            <li>装备搭配建议</li>
+                            <li>技能连招提示</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">📊</div>
+                    <div class="feature-content">
+                        <h3>数据可视化</h3>
+                        <p>直观展示游戏数据，助您了解表现</p>
+                        <ul class="feature-list">
+                            <li>胜率趋势图表</li>
+                            <li>对局数据分析</li>
+                            <li>英雄使用统计</li>
+                            <li>成长曲线追踪</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">🤖</div>
+                    <div class="feature-content">
+                        <h3>AI训练助手</h3>
+                        <p>个性化训练计划，提升游戏水平</p>
+                        <ul class="feature-list">
+                            <li>技能练习建议</li>
+                            <li>弱点分析改进</li>
+                            <li>配队阵容推荐</li>
+                            <li>战术模拟训练</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-row">
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">🎮</div>
+                    <div class="feature-content">
+                        <h3>游戏录像分析</h3>
+                        <p>AI分析游戏录像，找出改进空间</p>
+                        <ul class="feature-list">
+                            <li>关键时刻回放</li>
+                            <li>失误点分析</li>
+                            <li>操作优化建议</li>
+                            <li>战术复盘指导</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">📱</div>
+                    <div class="feature-content">
+                        <h3>跨平台支持</h3>
+                        <p>支持多个游戏平台，数据互通</p>
+                        <ul class="feature-list">
+                            <li>PC端支持</li>
+                            <li>移动端适配</li>
+                            <li>主机平台兼容</li>
+                            <li>云端数据同步</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feature-block glass hover-highlight">
+                    <div class="feature-icon">🔒</div>
+                    <div class="feature-content">
+                        <h3>安全与隐私</h3>
+                        <p>严格的数据保护措施</p>
+                        <ul class="feature-list">
+                            <li>数据加密存储</li>
+                            <li>隐私设置选项</li>
+                            <li>安全认证机制</li>
+                            <li>合规性保障</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

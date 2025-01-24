@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文档 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">概览</a>
+                    <a href="more.html" class="nav-link">功能</a>
+                    <a href="download.html" class="nav-link">下载</a>
+                    <a href="docs.html" class="nav-link active">文档</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="#" class="button login-button">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <nav class="docs-nav">
+                <div class="docs-nav-section">
+                    <h3>入门指南</h3>
+                    <a href="#introduction" class="docs-nav-link active">简介</a>
+                    <a href="#quick-start" class="docs-nav-link">快速开始</a>
+                    <a href="#installation" class="docs-nav-link">安装说明</a>
+                </div>
+                <div class="docs-nav-section">
+                    <h3>核心功能</h3>
+                    <a href="#ai-analysis" class="docs-nav-link">AI分析系统</a>
+                    <a href="#game-stats" class="docs-nav-link">游戏数据分析</a>
+                    <a href="#content-gen" class="docs-nav-link">内容生成</a>
+                </div>
+                <div class="docs-nav-section">
+                    <h3>API参考</h3>
+                    <a href="#api-overview" class="docs-nav-link">API概述</a>
+                    <a href="#authentication" class="docs-nav-link">认证</a>
+                    <a href="#endpoints" class="docs-nav-link">接口列表</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <section id="introduction" class="docs-section">
+                <h1>AI游戏助手文档</h1>
+                <p class="docs-lead">全面的游戏数据分析与内容生成解决方案</p>
+                
+                <div class="docs-card info">
+                    <h4>📢 最新更新</h4>
+                    <p>版本 1.0.0 现已发布！包含全新的游戏数据分析功能和优化的内容生成系统。</p>
+                    <a href="download.html" class="button primary">立即更新</a>
+                </div>
+
+                <h2>系统要求</h2>
+                <ul class="docs-list">
+                    <li>Windows 10 或更高版本</li>
+                    <li>macOS 10.15 或更高版本</li>
+                    <li>4GB 以上内存</li>
+                    <li>稳定的网络连接</li>
+                </ul>
+
+                <h2>功能特点</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>🎮 游戏数据分析</h3>
+                        <p>实时分析游戏数据，提供专业的战术建议和改进方案。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>📊 数据可视化</h3>
+                        <p>直观展示游戏数据，帮助玩家更好地理解和改进。</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>🤖 AI辅助</h3>
+                        <p>智能分析游戏局势，提供实时战术建议。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quick-start" class="docs-section">
+                <h2>快速开始</h2>
+                <div class="code-block">
+                    <pre><code>// 安装依赖
+npm install ai-game-assistant
+
+// 初始化配置
+const assistant = require('ai-game-assistant');
+assistant.init({
+    apiKey: 'your-api-key',
+    gameId: 'your-game-id'
+});</code></pre>
+                </div>
+
+                <div class="docs-card warning">
+                    <h4>⚠️ 注意</h4>
+                    <p>请确保在使用前已经获取了有效的 API 密钥。您可以在<a href="#">开发者中心</a>申请。</p>
+                </div>
+            </section>
+
+            <section id="api-overview" class="docs-section">
+                <h2>API 概述</h2>
+                <p>我们提供了完整的 RESTful API，支持以下功能：</p>
+                <ul class="docs-list">
+                    <li>游戏数据分析</li>
+                    <li>内容生成</li>
+                    <li>用户数据管理</li>
+                </ul>
+
+                <div class="endpoint-example">
+                    <h3>示例请求</h3>
+                    <div class="code-block">
+                        <pre><code>curl -X POST https://api.aigameassistant.com/v1/analyze \
+-H "Authorization: Bearer YOUR_API_KEY" \
+-H "Content-Type: application/json" \
+-d '{
+    "gameId": "123",
+    "matchData": {
+        // 比赛数据
+    }
+}'</code></pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 鼠标聚光灯效果 -->
+    <div class="spotlight"></div>
+    <!-- 背景渐变效果 -->
+    <div class="gradient-canvas"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar glass">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">概览</a>
+                    <a href="more.html" class="nav-link">功能</a>
+                    <a href="download.html" class="nav-link active">下载</a>
+                    <a href="docs.html" class="nav-link">文档</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="#" class="button login-button">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="download-section">
+            <div class="section-header">
+                <h1>下载安装</h1>
+                <p>选择适合您的版本开始使用</p>
+            </div>
+
+            <div class="download-row">
+                <div class="download-card glass hover-highlight">
+                    <div class="platform-icon">🖥️</div>
+                    <h3>Windows 版本</h3>
+                    <div class="version-info">
+                        <span class="version">v2.1.0</span>
+                        <span class="size">125MB</span>
+                    </div>
+                    <div class="system-req">
+                        <p>系统要求：</p>
+                        <ul>
+                            <li>Windows 10 64位及以上</li>
+                            <li>4GB RAM</li>
+                            <li>500MB 存储空间</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="button primary download-button">
+                        <span>下载 Windows 版</span>
+                    </a>
+                </div>
+
+                <div class="download-card glass hover-highlight">
+                    <div class="platform-icon">🍎</div>
+                    <h3>macOS 版本</h3>
+                    <div class="version-info">
+                        <span class="version">v2.1.0</span>
+                        <span class="size">118MB</span>
+                    </div>
+                    <div class="system-req">
+                        <p>系统要求：</p>
+                        <ul>
+                            <li>macOS 11.0及以上</li>
+                            <li>4GB RAM</li>
+                            <li>500MB 存储空间</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="button primary download-button">
+                        <span>下载 macOS 版</span>
+                    </a>
+                </div>
+
+                <div class="download-card glass hover-highlight">
+                    <div class="platform-icon">📱</div>
+                    <h3>移动版本</h3>
+                    <div class="version-info">
+                        <span class="version">v2.0.5</span>
+                        <span class="size">45MB</span>
+                    </div>
+                    <div class="system-req">
+                        <p>系统要求：</p>
+                        <ul>
+                            <li>iOS 13.0 / Android 8.0及以上</li>
+                            <li>2GB RAM</li>
+                            <li>200MB 存储空间</li>
+                        </ul>
+                    </div>
+                    <div class="mobile-downloads">
+                        <a href="#" class="button secondary">App Store</a>
+                        <a href="#" class="button secondary">Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

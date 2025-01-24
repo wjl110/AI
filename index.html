@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI游戏助手 - 产品介绍</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 鼠标聚光灯效果 -->
+    <div class="spotlight"></div>
+    <!-- 背景渐变效果 -->
+    <div class="gradient-canvas"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar glass">
+        <div class="nav-content">
+            <div class="nav-left">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" 
+                        stroke="currentColor" 
+                        stroke-width="1.5"
+                        stroke-linecap="round" 
+                        stroke-linejoin="round"/>
+                    </svg>
+                    <span>AI游戏助手</span>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">概览</a>
+                    <a href="more.html" class="nav-link">功能</a>
+                    <a href="download.html" class="nav-link">下载</a>
+                    <a href="docs.html" class="nav-link">文档</a>
+                    <a href="contact.html" class="nav-link">联系我们</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="切换主题">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 3v2m0 14v2M5 12H3m18 0h-2M7.05 7.05L5.636 5.636m12.728 0L16.95 7.05M7.05 16.95l-1.414 1.414m12.728 0L16.95 16.95M12 8a4 4 0 100 8 4 4 0 000-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="login.html" class="button login-button">登录</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 英雄区块 -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">全新发布</div>
+                <h1 class="hero-title">
+                    游戏数据分析的
+                    <span class="gradient-text">智能助手</span>
+                </h1>
+                <p class="hero-subtitle">
+                    专业的游戏数据分析与内容生成解决方案，为您提供实时战术建议和个性化服务
+                </p>
+                <div class="hero-actions">
+                    <a href="download.html" class="button primary glow">立即开始</a>
+                    <a href="docs.html" class="button secondary with-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 6v6m0 0v6m0-6h6m-6 0H6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        了解更多
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card glass">
+                    <div class="analytics-dashboard">
+                        <div class="dashboard-header">
+                            <div class="dashboard-title">游戏数据分析</div>
+                            <div class="dashboard-controls">
+                                <div class="control-dot"></div>
+                                <div class="control-dot"></div>
+                                <div class="control-dot"></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-content">
+                            <div class="chart-container">
+                                <svg class="analytics-chart" viewBox="0 0 300 200">
+                                    <!-- 数据曲线 -->
+                                    <path class="chart-line" d="M0,150 C50,150 50,50 100,50 S150,120 200,120 S250,20 300,20" fill="none" stroke="var(--primary-color)" stroke-width="3"/>
+                                    <!-- 渐变填充区域 -->
+                                    <path class="chart-area" d="M0,150 C50,150 50,50 100,50 S150,120 200,120 S250,20 300,20 V200 H0 Z" fill="url(#gradient)" opacity="0.2"/>
+                                    <!-- 定义渐变 -->
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                            <stop offset="0%" style="stop-color:var(--primary-color);stop-opacity:0.5"/>
+                                            <stop offset="100%" style="stop-color:var(--primary-color);stop-opacity:0"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="stats-indicators">
+                                <div class="stat-indicator">
+                                    <div class="indicator-label">胜率</div>
+                                    <div class="indicator-value">68.5%</div>
+                                    <div class="indicator-trend positive">↑ 2.3%</div>
+                                </div>
+                                <div class="stat-indicator">
+                                    <div class="indicator-label">场均得分</div>
+                                    <div class="indicator-value">24.7</div>
+                                    <div class="indicator-trend positive">↑ 1.8</div>
+                                </div>
+                            </div>
+                            <div class="data-grid">
+                                <div class="data-row">
+                                    <div class="data-cell">游戏时长</div>
+                                    <div class="data-cell">32:15</div>
+                                </div>
+                                <div class="data-row">
+                                    <div class="data-cell">对局数</div>
+                                    <div class="data-cell">128</div>
+                                </div>
+                            </div>
+                            <div class="global-stats">
+                                <div class="global-stat-item">
+                                    <span class="stat-number">28亿+</span>
+                                    <span class="stat-label">移动设备玩家</span>
+                                </div>
+                                <div class="global-stat-item">
+                                    <span class="stat-number">14亿+</span>
+                                    <span class="stat-label">PC玩家</span>
+                                </div>
+                                <div class="global-stat-item">
+                                    <span class="stat-number">9亿+</span>
+                                    <span class="stat-label">主机玩家</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 特性展示 -->
+        <section class="features-section">
+            <div class="section-header">
+                <h2>核心功能</h2>
+                <p>专业的游戏数据分析与AI辅助功能</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass hover-highlight">
+                    <div class="feature-icon">🎮</div>
+                    <h3>实时分析</h3>
+                    <p>智能分析游戏数据，提供实时战术建议</p>
+                </div>
+                <div class="feature-card glass hover-highlight">
+                    <div class="feature-icon">📊</div>
+                    <h3>数据可视化</h3>
+                    <p>直观展示游戏数据，助您做出更好决策</p>
+                </div>
+                <div class="feature-card glass hover-highlight">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI助手</h3>
+                    <p>智能AI助手，为您提供个性化建议</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服务展示 -->
+        <section class="services-section">
+            <div class="section-header">
+                <h2>服务方案</h2>
+                <p>为不同场景提供专业解决方案</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass hover-highlight">
+                    <div class="service-content">
+                        <div class="service-info">
+                            <div class="service-header">
+                                <h3>个人服务</h3>
+                                <span class="service-badge">To C</span>
+                            </div>
+                            <p class="service-desc">为游戏玩家提供专业的数据分析和提升方案</p>
+                        </div>
+                        <div class="service-features-compact">
+                            <div class="feature-item">
+                                <span class="feature-icon">📊</span>
+                                <span>个人战绩分析</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚡️</span>
+                                <span>实时战术建议</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🎯</span>
+                                <span>个性化训练</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">☁️</span>
+                                <span>云端数据存储</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#" class="button secondary">了解更多</a>
+                    </div>
+                </div>
+                <div class="service-card glass hover-highlight featured">
+                    <div class="service-content">
+                        <div class="service-info">
+                            <div class="service-header">
+                                <h3>企业服务</h3>
+                                <span class="service-badge">To B</span>
+                            </div>
+                            <p class="service-desc">为企业提供全方位的游戏数据解决方案</p>
+                        </div>
+                        <div class="service-features-compact">
+                            <div class="feature-item">
+                                <span class="feature-icon">🔄</span>
+                                <span>数据分析平台</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🔌</span>
+                                <span>API接口服务</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">⚙️</span>
+                                <span>定制化方案</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">🛠️</span>
+                                <span>技术支持</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-action">
+                        <a href="#" class="button primary">联系我们</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录成功 - AI游戏助手</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="success-container glass">
+            <div class="success-icon">✓</div>
+            <h2>登录成功</h2>
+            <p>欢迎回来！</p>
+            <div id="user-info"></div>
+            <a href="/" class="button primary">返回首页</a>
+        </div>
+    </div>
+    <script>
+        // 解析URL参数获取用户信息
+        const urlParams = new URLSearchParams(window.location.search);
+        const userInfo = JSON.parse(decodeURIComponent(urlParams.get('user')));
+        
+        // 显示用户信息
+        document.getElementById('user-info').innerHTML = `
+            <div class="user-profile">
+                <img src="${userInfo.avatar_url}" alt="头像" class="avatar">
+                <h3>${userInfo.name || userInfo.login}</h3>
+                <p>${userInfo.bio || ''}</p>
+            </div>
+        `;
+
+        // 保存用户信息到本地存储
+        localStorage.setItem('user', JSON.stringify(userInfo));
+        
+        // 3秒后自动跳转到首页
+        setTimeout(() => {
+            window.location.href = '/';
+        }, 3000);
+    </script>
+</body>
+</html> 
