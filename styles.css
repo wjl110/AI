@@ -1719,9 +1719,7 @@ a:hover {
 .social-links {
     display: flex;
     gap: 1rem;
-    margin-top: auto;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(var(--text-color), 0.1);
+    margin-top: 1rem;
 }
 
 .social-link {
@@ -1740,6 +1738,23 @@ a:hover {
     background: var(--primary-color);
     color: white;
     transform: translateY(-2px);
+}
+
+/* 为每个社交媒体添加特定的悬停颜色 */
+.social-link[aria-label="脉脉"]:hover {
+    background: #0084ff;
+}
+
+.social-link[aria-label="领英"]:hover {
+    background: #0077b5;
+}
+
+.social-link[aria-label="微博"]:hover {
+    background: #e6162d;
+}
+
+.social-link[aria-label="GitHub"]:hover {
+    background: #333;
 }
 
 .contact-form {
