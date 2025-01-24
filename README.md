@@ -80,8 +80,8 @@ code .
 
 ## 📞 联系方式
 
-- 邮箱：support@aigameassistant.com
-- 官网：https://aigameassistant.com
+- 邮箱：184313947@qq.com
+- 官网：
 - GitHub：https://github.com/wjl110
 
 ## 🙏 致谢
