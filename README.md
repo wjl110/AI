@@ -79,7 +79,7 @@ code .
 **主要开发者：** [wjl110](https://github.com/wjl110)
 
 ## 📞 联系方式
-
+- ![香港岭南大学](/LU_StdSignature_FullColour-01.jpg)
 - 邮箱：184313947@qq.com
 - 官网：[产品官方网站](https://ai-pi-nine.vercel.app/)
 - GitHub：https://github.com/wjl110
